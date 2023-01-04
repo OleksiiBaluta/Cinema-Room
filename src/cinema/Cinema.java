@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Cinema {
     static int countBuyTicket = 0;
-    static float percentage = 0;
+    static float percent = 0;
     static int currentIncome = 0;
     static int totalIncome;
     static int row;
@@ -63,14 +63,14 @@ public class Cinema {
             }
         }
         countBuyTicket++;
-        percentage = ((countBuyTicket * 100) / (float) countSeat);
+        percent = ((countBuyTicket * 100) / (float) countSeat);
         System.out.println();
         array[rowTicket][seatTicket] = "B";
     }
 
     static void statistic() {
         System.out.printf("Number of purchased tickets: %d%n", countBuyTicket);
-        System.out.printf("Percentage: %.2f%%%n", percentage);
+        System.out.printf("Percentage: %.2f%%%n", percent);
         System.out.printf("Current income: $%d%n", currentIncome);
         System.out.printf("Total income: $%d%n", totalIncome);
     }
